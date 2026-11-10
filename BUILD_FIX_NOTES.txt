@@ -1,0 +1,8 @@
+Build fix: Windows path-too-long failure when installing PySide6.
+
+1. Uses PySide6-Essentials (QtCore/QtGui/QtWidgets) rather than full PySide6, avoiding unused WebEngine/PDF/QML asset files.
+2. Creates venv in %LOCALAPPDATA%\MailNotifierBuild\venv to keep paths short.
+3. Existing .buildvenv folder in project can be deleted, but is no longer used.
+4. Output EXE remains in MailTitleNotifier\dist.
+5. Run build_windows.cmd.
+6. Windows EXE build has not been tested in this Linux environment.

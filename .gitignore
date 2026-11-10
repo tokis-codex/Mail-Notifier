@@ -1,0 +1,25 @@
+# Personal account configuration / encrypted passwords (never publish)
+settings.json
+credentials.json
+settings.json.tmp
+credentials.json.tmp
+.legacy_migration_complete
+.build_python_path.txt
+
+# Python / build outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.buildvenv/
+build/
+dist/
+*.spec
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

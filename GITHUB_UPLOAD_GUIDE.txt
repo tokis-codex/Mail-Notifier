@@ -1,0 +1,18 @@
+메일 알리미 - GitHub 배포 안내
+
+1. GitHub에서 새 저장소를 생성합니다.
+2. 이 패키지의 MailTitleNotifier 폴더 내부 파일을 저장소의 최상위 폴더에 올립니다.
+   (mail_title_notifier.py, build_exe.py, requirements.txt, .github/workflows 등)
+3. GitHub 저장소의 Actions 탭을 열고 Build Windows EXE를 실행합니다.
+4. 빌드가 성공하면 실행 기록 하단 Artifacts에서 MailNotifier-Windows 파일을 다운로드합니다.
+5. 공개 배포용 릴리스를 만들려면 v6.9.1 같은 버전 태그를 푸시합니다.
+   예: git tag v6.9.1 && git push origin v6.9.1
+6. Releases에 업로드된 EXE와 SHA256SUMS.txt를 배포합니다.
+
+중요:
+- 실제 메일 계정이 들어 있는 settings.json과 credentials.json은 절대 GitHub에 올리지 마세요.
+- 이 패키지에는 두 설정 파일이 포함되지 않았습니다.
+- GitHub에서 EXE를 만드는 것은 Windows Actions 서버에서 진행되며, PC에 Python이 없어도 됩니다.
+- 개인 PC에서 빌드하는 경우 Python 3.11~3.13을 사용하세요.
+- 저장소에 별도 오픈소스 라이선스를 임의로 추가하지 않았습니다. 공개 재배포 허가 조건은 소유자가 정하세요.
+- 파일을 직접 GitHub 웹 화면에서 업로드하면 숨김 폴더 .github가 제대로 포함되었는지 확인하세요.
