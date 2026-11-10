@@ -2,6 +2,8 @@
 
 Windows용 **PySide6 시스템 트레이 메일 알림 프로그램**입니다. IMAP/POP3 계정의 새 메일을 확인하고 제목, 발신자 이름, 수신 시각, 본문 앞부분을 알림으로 보여줍니다.
 
+<img src="https://github.com/tokis-codex/Mail-Notifier/blob/main/preview.png">
+
 > **기준 소스:** v6.9 PySide6 프리징 개선판(2026-10-28). v7.0~v7.2의 폐기된 디자인 변경은 포함하지 않았습니다. 이 저장소 패키지는 배포 파일 정리 및 GitHub 빌드 자동화를 위한 것으로, 메일 수신 프로그램의 기능 코드는 수정하지 않았습니다.
 
 ## 주요 기능
