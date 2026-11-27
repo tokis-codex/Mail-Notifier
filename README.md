@@ -18,26 +18,6 @@ Windows용 **PySide6 시스템 트레이 메일 알림 프로그램**입니다. 
 - 저장된 비밀번호는 Windows DPAPI로 암호화 (다른 PC·Windows 사용자로 옮기면 재입력 필요)
 - 전체 계정 및 설정 초기화
 
-## 다운로드 (GitHub Actions)
-
-1. GitHub에 이 폴더의 **내용물**을 새 저장소 루트에 업로드합니다.
-2. 저장소의 **Actions → Build Windows EXE → Run workflow**를 실행합니다. `main` 브랜치에 푸시해도 빌드됩니다.
-3. 성공한 실행의 **Artifacts**에서 `MailNotifier-Windows`를 다운로드합니다.
-4. 압축을 풀어 `메일 알리미.exe`를 실행합니다. **Windows 전용**입니다.
-
-`v*` 형식의 태그를 푸시하면 GitHub **Releases**에도 EXE와 SHA-256 체크섬을 첨부하도록 구성했습니다. 릴리스 생성 권한이 허용되어 있어야 합니다.
-
-## Windows PC에서 직접 빌드
-
-Python **3.11~3.13** 설치 후 `build_windows.cmd` 실행 또는 다음 명령을 사용합니다.
-
-```powershell
-py -3.12 -m venv .venv
-.venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe build_exe.py
-```
-
-결과물: `dist\메일 알리미.exe`. PyInstaller로 패키징하므로 실행하는 PC에는 별도 Python 설치가 필요하지 않습니다. Windows 긴 경로 오류를 피하려면 폴더 경로를 짧게 잡거나 `build_windows.cmd`를 사용하세요.
 
 ## 사용 안내
 
