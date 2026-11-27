@@ -1,6 +1,6 @@
 # 메일 알리미 (Mail Notifier)
 
-Windows용 **PySide6 시스템 트레이 메일 알림 프로그램**입니다. IMAP/POP3 계정의 새 메일을 확인하고 제목, 발신자 이름, 수신 시각, 본문 앞부분을 알림으로 보여줍니다.
+Windows용 **PySide6 시스템 트레이 메일 알림 프로그램**입니다.</br> IMAP/POP3 계정의 새 메일을 확인하고 제목, 발신자 이름, 수신 시각, 본문 앞부분을 알림으로 보여줍니다.
 
 <img src="https://github.com/tokis-codex/Mail-Notifier/blob/main/preview.png">
 
